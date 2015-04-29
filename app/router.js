@@ -10,4 +10,5 @@ export default Router.map(function() {
   this.route('act');
   // this.route('newstory');
   this.route('newstory',{path:'story/new'});
+  this.resource('tang',{path:"/"});
 });
