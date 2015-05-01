@@ -1,0 +1,17 @@
+<div class="container-fluid" >
+  <div class="col-md-3">
+    <div class="center-rigth tang_home">
+      <img src="assets/image/middle.png" class="img-circle" width="73.4px" hight="134.5PX">
+      <h1 class=".lead"><em>Hey, I am Tang</em></h1>
+      <p>A developer, live with passion </p>
+        <ul class="nav nav-pills nav-stacked">
+            <li role="presentation" >{{link-to 'Projects' 'projects'}}</li>
+            <li role="presentation" >{{link-to 'Footprints' 'footprints'}}</li>
+            <li role="presentation" >{{link-to 'About' 'about'}}</li>
+        </ul>
+    </div>
+  </div>
+  <div class="col-md-8 detail">
+       {{yield}}
+  </div>
+</div>

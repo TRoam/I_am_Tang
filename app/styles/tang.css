@@ -5,10 +5,23 @@
   text-align:center;
 }
 
+.center-rigth{
+	display: block;
+	margin-right: 10px;
+	margin-left: auto;
+	text-align: right;
+}
+
 .tang_home{
 	padding-top:200px;
 }
+.rigth-boder{
+	border-right:2px solid black;
+}
+.tang_detail{
+	padding-top: 100px;
+}
 
-.tang_todetail{
+.detail{
 	padding-top: 100px;
 }
