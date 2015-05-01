@@ -8,7 +8,8 @@ var Router = Ember.Router.extend({
 export default Router.map(function() {
   this.route('edu');
   this.route('act');
-  // this.route('newstory');
-  this.route('newstory',{path:'story/new'});
   this.resource('tang',{path:"/"});
+  this.route('projects');
+  this.route('footprints');
+  this.route('about');
 });
