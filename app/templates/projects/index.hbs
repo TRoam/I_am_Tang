@@ -1,0 +1,20 @@
+{{#view "left-tem"}}
+<div class="page-header">
+  <h1>WHAT HAVE I DONE<small class="text-capitalize"> my projects</small></h1>
+</div>
+<div class="project_list">
+	{{#each project in model}}
+		<div class="list-group">
+		  <a  class="list-group-item">
+		    <h4 class="list-group-item-heading">
+		    	{{#link-to 'project' project}}
+		    		{{project.name}}
+		    	{{/link-to}} <small>{{formatted-date project.startTime 'MMMM Do, YYYY'}}</small>
+		    </h4>
+		    <p class="list-group-item-text project_list">{{project.description}}</p>
+		  </a>
+		</div>
+    {{/each}}
+</div>
+{{/view}}
+{{outlet}}

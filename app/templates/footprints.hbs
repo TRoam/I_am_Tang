@@ -1,1 +1,16 @@
-{{outlet}}
+{{#view 'left-tem'}}
+<div class="page-header">
+  <h1>WHERE I AM</h1>
+</div>
+<div class="project_list">
+	{{#each footprint in model}}
+	<div class="row">
+	  <div class="col-md-3 col-md-offset-1">
+	  	<h4>{{footprint.start_at}} - {{footprint.end_at}} </h4>
+	  </div>
+	  <div class="col-md-3"><h4>{{footprint.content}}</h4></div>
+	  <div class="col-md-1"><h4>{{footprint.role}}</h4></div>
+	</div>
+	{{/each}}
+</div>
+{{/view}}
