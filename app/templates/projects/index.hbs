@@ -9,8 +9,9 @@
 		    <h4 class="list-group-item-heading">
 		    	{{#link-to 'project' project}}
 		    		{{project.name}}
-		    	{{/link-to}} <small>{{formatted-date project.startTime 'MMMM Do, YYYY'}}</small>
+		    	{{/link-to}} <small></small>
 		    </h4>
+		    <h5 clsss="project_list"><small>From</small> {{formatted-date project.startTime 'MMMM Do, YYYY'}} <small>To</small> {{formatted-date project.endTime 'MMMM Do, YYYY'}}</h5>
 		    <p class="list-group-item-text project_list">{{project.description}}</p>
 		  </a>
 		</div>

@@ -4,3 +4,5 @@ export default DS.ActiveModelAdapter.extend({
 	namespace: 'api',
     host: 'http://localhost:3000'
 });
+
+// ActiveModelAdapter
