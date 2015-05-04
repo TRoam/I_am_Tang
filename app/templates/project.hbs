@@ -36,9 +36,20 @@
 		    </div>
 		  </div>
 		</form></div>
-		<hr>
+		<div class="page-header">
+			<h4>Comments</h4>
+		</div>
+		{{textarea valueBinding='text' class = "form-control"}}
+		<!-- <textarea class="form-control" rows="3"></textarea> -->
+		<div style="padding:5px">
+			<button type="submit" class="btn btn-primary pull-right" {{action 'createComment'}} >Submit</button>
+		</div>
+		
 		{{#each comment in comments}}
-		  <p>{{coment.text}}</p> 
+			<blockquote>
+			  <p>{{comment.text}}</p>
+			  <footer>created at {{formatted-date comment.created_at 'xyy'}}</footer>
+			</blockquote>
 		{{/each}}
 </div>
 {{/view}}
